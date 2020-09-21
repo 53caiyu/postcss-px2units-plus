@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddaa593e-135d-4872-9632-dc157208a8c0" name="Default Changelist" comment="init">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.test.js" afterDir="false" />
+    <list default="true" id="ddaa593e-135d-4872-9632-dc157208a8c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600672100519</updated>
       <workItem from="1600672104178" duration="8000" />
-      <workItem from="1600672144397" duration="13138000" />
+      <workItem from="1600672144397" duration="15066000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1600672342653</created>
@@ -133,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600672342653</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1600685301207</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600685301207</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <created>1600685323206</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600685323206</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,37 +167,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600684112705" />
-    <state x="560" y="209" key="CommitChangelistDialog2" timestamp="1600685291326">
+    <state x="560" y="209" key="CommitChangelistDialog2" timestamp="1600685321473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="209" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600685291326" />
-    <state width="1877" height="365" key="GridCell.Tab.0.bottom" timestamp="1600685271516">
+    <state x="560" y="209" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600685321473" />
+    <state width="1877" height="365" key="GridCell.Tab.0.bottom" timestamp="1600685328378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600685271516" />
-    <state width="1877" height="365" key="GridCell.Tab.0.center" timestamp="1600685271516">
+    <state width="1877" height="365" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600685328378" />
+    <state width="1877" height="365" key="GridCell.Tab.0.center" timestamp="1600685328378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600685271516" />
-    <state width="1877" height="365" key="GridCell.Tab.0.left" timestamp="1600685271516">
+    <state width="1877" height="365" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600685328378" />
+    <state width="1877" height="365" key="GridCell.Tab.0.left" timestamp="1600685328377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600685271516" />
-    <state width="1877" height="365" key="GridCell.Tab.0.right" timestamp="1600685271516">
+    <state width="1877" height="365" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600685328377" />
+    <state width="1877" height="365" key="GridCell.Tab.0.right" timestamp="1600685328378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600685271516" />
+    <state width="1877" height="365" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600685328378" />
     <state x="754" y="221" key="RollbackChangesDialog" timestamp="1600672256362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="754" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600672256362" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600672425425">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600685324997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600672425425" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600685324997" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1600672159575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600672159575" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600686704569">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600686704569" />
   </component>
 </project>
