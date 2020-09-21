@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ddaa593e-135d-4872-9632-dc157208a8c0" name="Default Changelist" comment="init">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.test.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectId" id="1hoKec1LSbtTXbFdgPudyy7oVri" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RunManager" selected="npm.test">
+    <configuration name="Force all properties to be replaced" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/index.test.js" />
+      <test-names>
+        <test-name value="Force all properties to be replaced" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Replace only the specified attribute" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/index.test.js" />
+      <test-names>
+        <test-name value="Replace only the specified attribute" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="disable replace comment" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/index.test.js" />
+      <test-names>
+        <test-name value="disable replace comment" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="replace only attribute pixel" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/index.test.js" />
+      <test-names>
+        <test-name value="replace only attribute pixel" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.Force all properties to be replaced" />
+        <item itemvalue="Jest.Replace only the specified attribute" />
+        <item itemvalue="Jest.replace only attribute pixel" />
+        <item itemvalue="Jest.disable replace comment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddaa593e-135d-4872-9632-dc157208a8c0" name="Default Changelist" comment="" />
+      <created>1600672100519</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600672100519</updated>
+      <workItem from="1600672104178" duration="8000" />
+      <workItem from="1600672144397" duration="13138000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1600672342653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600672342653</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600683890051">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600683890051" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1600684112705">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600684112705" />
+    <state x="560" y="209" key="CommitChangelistDialog2" timestamp="1600685291326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="209" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600685291326" />
+    <state width="1877" height="365" key="GridCell.Tab.0.bottom" timestamp="1600685271516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600685271516" />
+    <state width="1877" height="365" key="GridCell.Tab.0.center" timestamp="1600685271516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600685271516" />
+    <state width="1877" height="365" key="GridCell.Tab.0.left" timestamp="1600685271516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600685271516" />
+    <state width="1877" height="365" key="GridCell.Tab.0.right" timestamp="1600685271516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="365" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600685271516" />
+    <state x="754" y="221" key="RollbackChangesDialog" timestamp="1600672256362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="754" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600672256362" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600672425425">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600672425425" />
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1600672159575">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600672159575" />
+  </component>
+</project>
