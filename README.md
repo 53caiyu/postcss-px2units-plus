@@ -18,9 +18,23 @@ npm install --save-dev postcss postcss-px2units-plus
 ```js
 module.exports = {
   plugins: [
-   require('postcss-px2units-plus'),
+   require('postcss-px2units-plus')({})
   ]
 }
+```
+**options**
+```js
+{
+    divisor: 1,
+    multiple: 1,
+    decimalPlaces: 2,
+    targetUnits: 'rpx',
+    selector: null,
+    onlyAttr: [],
+    enableAllComment: 'px2units-enable',
+    disableAllComment: 'px2units-disable',
+    comment: 'no'
+  }
 ```
 
 
@@ -147,7 +161,7 @@ Default:
 ```js
 module.exports = {
   plugins: [
-   require('postcss-px2units-plus',{
+   require('postcss-px2units-plus')({
     multiple: 2
    })
   ]
@@ -170,7 +184,7 @@ p {
 ```js
 module.exports = {
   plugins: [
-   require('postcss-px2units-plus',{
+  require('postcss-px2units-plus')({
      multiple: 2,
     selector: /\.my-/
    })
@@ -202,7 +216,7 @@ module.exports = {
 ```js
 module.exports = {
   plugins: [
-   require('postcss-px2units-plus',{
+   require('postcss-px2units-plus')({
      multiple: 2,
     selector: /\.my-/,
     onlyAttr: ['padding'], //支持正则,数组,字符串
@@ -239,7 +253,7 @@ module.exports = {
 ```js
 module.exports = {
   plugins: [
-   require('postcss-px2units-plus',{
+   require('postcss-px2units-plus')({
      multiple: 2,
     selector: /\.my-/,
     onlyAttr: ['padding'], //支持正则,数组,字符串
