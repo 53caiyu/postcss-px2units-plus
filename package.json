@@ -1,6 +1,6 @@
 {
   "name": "postcss-px2units-plus",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "PostCSS plugin apx2units-plus",
   "keywords": [
     "postcss",
@@ -30,7 +30,7 @@
     "jest-ci": "^0.1.1",
     "jest-cli": "^26.4.2",
     "lint-staged": "^10.3.0",
-    "postcss": "^8.0.2"
+    "postcss": "^7.0.0"
   },
   "husky": {
     "hooks": {

@@ -1,34 +1,93 @@
-module.exports = (options = {}) => {
+'use strict';
+const postcss = require('postcss')
+
+module.exports = postcss.plugin('postcss-px2units-plus', options => {
   const opts = Object.assign({}, {
-    //除数,转换后的值 等于 pixel / divisor
+    /**
+     * 除数 int 默认值:1
+     * 把像素相除  100 / divisor * multiple
+     * width:20px / 1  = width:20px
+     */
     divisor: 1,
 
-    //倍数，转换后的值 等于 pixel * multiple
+    /**
+     * 倍数 int
+     * 把像素相乘  100 / divisor * multiple
+     * width:20px * 1  = width:20px
+     */
     multiple: 1,
 
-    // 小数点后保留的位数，例如, width: 100px中的100，
-    // 将会被转换成 Number(100 / divisor * multiple).toFixed(decimalPlaces)
+    /**
+     * 小数点后保留的位数 int 默认值:rpx
+     * Number(100 / divisor * multiple).toFixed(decimalPlaces)
+     * width:20.001px * 1  = width:20.00px
+     */
     decimalPlaces: 2,
 
-    //换单位，默认值为 rpx，如果设置其值为 'rem'，px将会被转换为rem。
+    /**
+     * 转换单位 string 默认值:rpx
+     * 设置其值为 'rem'，px将会被转换为rem。
+     */
     targetUnits: 'rpx',
 
-    // 选择器, 支持正则, 比如.my- 只会替换.my-box
+    /**
+     * 限定选择器 string|RegExp
+     * 仅转换指定选择器样式
+     * 设置值: .my-box  只转换.my-box
+     * 设置值: /\.my-b/  转换.my-box,.my-item ,.my-title等
+     * 设置值: /title$/  转换.my-title,.u-title$ ,.title等
+     */
     selector: null,
 
-    //只转换的属性,不在列表中的不转换,支持字符串,数组,正则
+    /**
+     * 属性限定 array|RegExp
+     * 仅转换指定属性,为空表示所有
+     * 设置值: ['width']  只转换width
+     * 设置值: ['width','font-size']  只转换width,font-size
+     */
     onlyAttr: [],
 
-    // 全部启用注释,
+    /**
+     * 启用转换注释,属性限定单独全部转换
+     * 写在每条css规则前面
+     * 如属性限定设置值: ['width']
+     * 转换规则
+     * ps:本注释\为转义符,实际写过程中不用包含
+     * /* px2units-enable *＼/
+     * .title{width:30px;font-size:20px}
+     * 转换后
+     * .title{width:30rpx;font-size:20rpx}
+     */
     enableAllComment: 'px2units-enable',
 
-    // 全部禁用注释
+    /**
+     * 禁用转换注释,任何情况下,有该注释不转换
+     * 写在每条css规则前面
+     * 转换规则
+     * ps:本注释\为转义符,实际写过程中不用包含
+     * /* px2units-disable *＼/
+     * .title{width:30px;font-size:20px}
+     * 转换后
+     * .title{width:30px;font-size:20px}
+     */
     disableAllComment: 'px2units-disable',
 
-    //不转换px单位的注释，默认为 /*no*/
-    //如果设置 comment 的值为 'not replace', width: 100px 中的100px将不会被转换为 rpx。
+    /**
+     * 单条css样式不转换注释  默认为 /*no*\/
+     * ps:本注释\为转义符,实际写过程中不用包含
+     * .title{
+     *  width:30px; /*no*\/
+     *  font-size:20px
+     * }
+     *  .title{
+     *  width:30px; /*no*\/
+     *  font-size:20rpx
+     * }
+     */
     comment: 'no'
   }, options)
+
+  const declsSelector = opts.onlyAttr instanceof Array ? new RegExp(opts.onlyAttr.join('|')) : opts.onlyAttr
 
   /**
    * 替换PX
@@ -44,10 +103,10 @@ module.exports = (options = {}) => {
   }
 
   /**
-   * 遍历规则替换CSS规则
+   * 验证是否替换,有样式注释则取消
    * @param decl 规则对象  font-size: 16px;* no *
    */
-  const replaceDecl = (decl) => {
+  const checkReplace = (decl) => {
     if (decl && decl.next() && decl.next().type === 'comment' && decl.next().text === opts.comment) {
       decl.next().remove()
     } else {
@@ -55,32 +114,29 @@ module.exports = (options = {}) => {
     }
   }
 
-  return {
-    postcssPlugin: 'postcss-px2units-plus',
-    Root(root) {
-      // 属性选择器
-      const declsSelector = opts.onlyAttr instanceof Array ? new RegExp(opts.onlyAttr.join('|')) : opts.onlyAttr
-      // 遍历规则
-      const walkRules = (rule) => {
-        if (rule && rule.prev() && rule.prev().type === 'comment') {   // 存在规则级注释
-          if (rule.prev().text === opts.enableAllComment) {         //全部启用注释, 则取消属性选择器
-            rule.walkDecls(replaceDecl)
-            rule.prev().remove()
-          } else if (rule.prev().text === opts.disableAllComment) { // 禁用转换,则取消操作
-            rule.prev().remove()
-          }
-        } else {
-          // 没有注释,默认操作
-          rule.walkDecls(declsSelector, replaceDecl)
-        }
+  /**
+   * 遍历规则
+   * @param rule
+   */
+  const walkRules = (rule) => {
+    if (rule && rule.prev() && rule.prev().type === 'comment') {   // 存在规则级注释
+      if (rule.prev().text === opts.enableAllComment) {         //全部启用注释, 则取消属性选择器
+        rule.walkDecls(checkReplace)
+        rule.prev().remove()
+      } else if (rule.prev().text === opts.disableAllComment) { // 禁用转换,则取消操作
+        rule.prev().remove()
       }
-
-      if (opts.selector) {
-        root.walkRules(opts.selector, walkRules)
-      } else {
-        root.walkRules(walkRules)
-      }
+    } else {
+      // 没有注释,默认操作
+      rule.walkDecls(declsSelector, checkReplace)
     }
   }
-}
-module.exports.postcss = true
+
+  return (root) => {
+    if (opts.selector) {
+      root.walkRules(opts.selector, walkRules)
+    } else {
+      root.walkRules(walkRules)
+    }
+  }
+})
