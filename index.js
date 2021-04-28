@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 const postcss = require('postcss')
 
 module.exports = postcss.plugin('postcss-px2units-plus', options => {
@@ -125,11 +125,14 @@ module.exports = postcss.plugin('postcss-px2units-plus', options => {
         rule.prev().remove()
       } else if (rule.prev().text === opts.disableAllComment) { // 禁用转换,则取消操作
         rule.prev().remove()
+      } else {
+        rule.walkDecls(declsSelector, checkReplace)
       }
     } else {
       // 没有注释,默认操作
       rule.walkDecls(declsSelector, checkReplace)
     }
+
   }
 
   return (root) => {
